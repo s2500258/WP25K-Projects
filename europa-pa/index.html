@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa-pa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Game "Think on of any European country"</h1>
+
+        <div id="question-container" class="question-box">
+            <img id="question-image" src="images/start.png" alt="Question picture">
+            <p id="question-text">I will guess it in a few "yes or no" questions. Press "Start" when you are ready!"</p>
+            <p id="emoji" class="hidden"></p>
+        </div>
+
+        <div id="answers-container" class="answer-option hidden">
+            <input type="radio" id="yesOption" name="answer" value="Yes">
+            <label for="yesOption">Yes</label>
+            <input type="radio" id="noOption" name="answer" value="No">
+            <label for="noOption">No</label>
+        </div>
+
+        <button id="submit-btn" class="button hidden">Answer</button>
+        <button id="start-restart-btn" class="button">Start</button>
+    </div>
+
+<script src="script.js"></script>   
+</body>
+</html>

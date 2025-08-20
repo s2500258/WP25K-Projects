@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <a href="#hero">Aloitus</a>
+            <a href="#about">Tietoa</a>
+            <a href="#projects">Projektit</a>
+            <a href="#contact">Yhteystiedot</a>
+            <button id="theme-toggle">Tumma tila</button>
+        </nav>
+        <div class="mobile-nav">
+            <button class="hamburger">☰</button>
+            <div class="mobile-nav-links">
+                <a href="#hero">Aloitus</a>
+                <a href="#about">Tietoa</a>
+                <a href="#projects">Projektit</a>
+                <a href="#contact">Yhteystiedot</a>
+                <button id="theme-toggle-mobile">Tumma tila</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Olen Bond. James Bond.</h1>
+                <p>Kuuluisa hänen majesteettinsa salainen agentti</p>
+                <a href="#projects" class="button">Katso projektit</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-image">
+                    <img src="images/gun1.webp" alt="Profiilikuva">
+                </div>
+                <div class="about-text">
+                    <h2>Tietoa minusta</h2>
+                    <p>Vaaralliset olosuhteet eivät ole minulle vieraita, navigoinkin korkean panoksen ympäristöissä laskelmoidulla tarkkuudella. Olen taitava saavuttamaan tavoitteet nopeasti ja huomaamattomasti, usein huomattavan riskin alla. </p>
+                    <p>Olen omatoiminen toimija ja kekseliäs ongelmanratkaisija paineen alla. Loppujen lopuksi keskityn tulosten saavuttamiseen, luontaisista vaaroista huolimatta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projektit</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img class="project-pic" src="images/Goldfinger 2.jpg" alt="Kultasormi">
+                        <h3>Kultasormi</h3>
+                        <button class="project-details-btn" data-modal="modal1">Katso tiedot</button>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-pic" src="images/casino.jpeg" alt="Casino Royale">
+                        <h3>Casino Royale</h3>
+                        <button class="project-details-btn" data-modal="modal2">Katso tiedot</button>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-pic" src="images/diamonds 2.jpg" alt="Timantit ovat ikuisia">
+                        <h3>Timantit ovat ikuisia</h3>
+                        <button class="project-details-btn" data-modal="modal3">Katso tiedot</button>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-pic" src="images/moonraker 2.jpg" alt="Kuuraketti">
+                        <h3>Kuuraketti</h3>
+                        <button class="project-details-btn" data-modal="modal3">Katso tiedot</button>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-pic" src="images/thunderball 2.jpg" alt="Pallosalama">
+                        <h3>Pallosalama</h3>
+                        <button class="project-details-btn" data-modal="modal3">Katso tiedot</button>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-pic" src="images/skyfall 2.jpg" alt="Skyfall">
+                        <h3>Skyfall</h3>
+                        <button class="project-details-btn" data-modal="modal3">Katso tiedot</button>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Ota yhteyttä</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nimi:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Sähköposti:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Viesti:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Lähetä viesti</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mi-6. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">To top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header {
+    background-color: #440f0f;
+    color: #440f0f;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav.desktop-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav.desktop-nav a:hover {
+    text-decoration: underline;
+}
+
+nav.desktop-nav button {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav.desktop-nav button:hover {
+    text-decoration: underline;
+}
+
+.mobile-nav {
+    display: none;
+    background-color: #440f0f;
+    color: #fff;
+    padding: 1rem 20px;
+    position: relative;
+}
+
+.hamburger {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.mobile-nav-links.open {
+    display: block;
+}
+
+.mobile-nav-links a,
+.mobile-nav-links button {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links button:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('images/red.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #843f3f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #777;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.about .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1 1 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-text {
+    flex: 1 1 500px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.projects {
+    background-color: #eee;
+    padding: 80px 0;
+}
+
+.dark-mode .projects {
+    background-color: #222;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-pic {
+    width: 100px;
+}
+
+.dark-mode .project-card {
+    background-color: #444;
+    color: #fff;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.project-card h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.project-card button {
+    display: block;
+    width: 100%;
+    background-color: #843f3f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .project-card button {
+    background-color: #777;
+}
+
+.project-card button:hover {
+    background-color: #777;
+}
+
+.contact {
+    padding: 60px 0; 
+    background-color: transparent; 
+    color: inherit; 
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: inherit;
+}
+
+.contact form {
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 0; 
+    background-color: transparent; 
+    border-radius: 0; 
+    box-shadow: none; 
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff; 
+    color: #333;
+    transition: border-color 0.2s ease;
+}
+
+.dark-mode .form-group input[type="text"],
+.dark-mode .form-group input[type="email"],
+.dark-mode .form-group textarea {
+    background-color: #555;
+    color: #f4f4f4;
+    border-color: #777;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #333; 
+    outline: none;
+}
+
+.dark-mode .form-group input[type="text"]:focus,
+.dark-mode .form-group input[type="email"]:focus,
+.dark-mode .form-group textarea:focus {
+    border-color: #aaa;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact .button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dark-mode .contact .button {
+    background-color: #6a5acd;
+}
+
+.contact .button:hover {
+    background-color: #555;
+}
+
+.dark-mode .contact .button:hover {
+    background-color: #7b68ee;
+}
+
+footer {
+    background-color: #440f0f;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 50px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #440f0f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    background-color: #777;
+}
+
+
+@media (max-width: 768px) {
+    nav.desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack projects on small screens */
+    }
+
+    .contact form {
+        padding: 0; /* Remove form padding on smaller screens too */
+    }
+}

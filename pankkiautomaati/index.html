@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pankkiautomaatti-simulaattori</title>
+</head>
+<body>
+    <main>
+    <div class="atm">
+        <header></header>
+        <h1>Tervetuloa!</h1>
+        <input type="password" class="pinInput" placeholder="Syötä PIN-koodi" /><button id="pinBtn" class="pinButton">OK</button>
+    <div id="moneyActions">
+        <p class="viesti"> Nykyinen saldo: </p> <div id="saldo"><p id="saldo">N/A</p></div>
+        <input type="text"  id="talletusSumma" class="moneyInput" placeholder="Syötä summa tähän"/>
+        <button class="moneyButton" id="talletaBtn">Tallettaa</button>
+        <input type="text" id="nostoSumma" class="moneyInput" placeholder="Syötä summa tähän" />
+        <button class="moneyButton" id="nostaBtn">Nostaa</button>
+    </div>
+    <div id="viesti" class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>

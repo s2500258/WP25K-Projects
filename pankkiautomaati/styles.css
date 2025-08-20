@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 100%) no-repeat center top;
+    background-size: cover;
+    font-family: "Red Hat Display", Arial, sans-serif;
+}
+
+main {
+    margin: 10px auto;
+    width: 300px;
+}
+
+.atm {
+    margin-top: 10px;
+    text-align:center;
+   /* background-color: blanchedalmond; */
+}
+
+#moneyActions {
+    border-color: rgb(164, 11, 11);
+    border-radius: 5px;
+    border-width: 4px;
+    background-color: rgb(251, 239, 224);
+    width: 270px;
+    height: 155px;
+    text-align: center;
+    margin-top: 30px;
+    display:inline-block;
+    pointer-events: none; 
+    filter: brightness(1.5);  
+}
+
+header {
+    height:150px;
+    background: url(images/monopoly-logo.png) no-repeat center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pinInput {
+    margin-top: 30px;
+    width: 126px;
+    height: 28px;
+}
+.pinButton {
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 60px;
+    height: 28px;
+}
+.moneyButton {
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 60px;
+    height: 28px;
+}
+.moneyInput {
+    margin-top: 15px;
+    width: 126px;
+    height: 28px;
+}
+.viesti {
+    margin-top: 15px;
+
+}

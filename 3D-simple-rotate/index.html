@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tosi perus 3D</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="pickers">
+        <h1>Valitse muoto ja väri</h1>
+        <label for="shapePicker">Muoto:</label>
+          <select id="shapePicker">
+            <option name="cylinder">Sylinteri</option>
+            <option name="cone">Kartio</option>
+            <option name="torus">Torus</option>
+            <option name="cube">Kuutio</option>
+          </select>
+        <label for="colorPicker">Väri:</label>
+        <input type="color" id="colorPicker" value="#008080">       
+    </div>
+    
+    <div id="viewer"></div>
+
+  <script type="module" src="script2.js"></script>
+</body>
+</html>

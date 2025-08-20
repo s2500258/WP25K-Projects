@@ -1,0 +1,174 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 465px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  margin-bottom: 10px;
+}
+
+.controls input[type="text"],
+.controls select {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 135px;
+ transition: all 0.3s ease; 
+}
+
+.controls input[type="text"]:focus,
+.controls select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+#sortAnimals {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+  width: 120px;
+}
+
+#sortAnimals:hover {
+  background-color: #45a049;
+}
+
+#animalList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#animalList ul {
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 440px;
+  display: flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  transition: background-color 0.3s ease;
+}
+
+#animalList li:last-child {
+  border-bottom: none;
+}
+
+#animalList li:hover {
+  background-color: #f0f0f0;
+}
+
+.add-animal {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.add-animal h2 {
+  color: #4CAF50;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.add-animal input[type="text"],
+.add-animal select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+ /* width: calc(50% - 10px); */
+  transition: all 0.3s ease;
+  width: 30%;
+
+}
+
+.add-animal input[type="text"]:focus,
+.add-animal select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+/* #searchAnimal {
+    width: 150px;
+}
+
+#filterType {
+    width: 150px;
+}  */
+
+.add-animal button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;  
+  transition: background-color 0.3s ease;
+  width: 110px;
+}
+
+.add-animal button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+  }
+/*
+  .controls input[type="text"],
+  .controls select,
+  .add-animal input[type="text"],
+  .add-animal select {
+    width: 100%; 
+  }*/
+}
+
+/* #newAnimalName {
+    width: 145px;
+}
+
+#newAnimalType {
+    width: 145px;
+} */
+
+.input {
+  width: 150px;
+}
+.select {
+  width: 150px;
+}
